@@ -3,3 +3,5 @@
 import numpy as np
 x = np.average([3, 4, 5])
 print(x)
+
+# test add new lines
