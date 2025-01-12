@@ -1,0 +1,55 @@
+---
+title: "Documentation"
+listing:
+  - id: df
+    fields: [title, description]
+    contents: 
+      - "df_manipulation.qmd"
+    type: table
+    sort: false # keep original order
+    filter-ui: false
+    sort-ui: false
+    categories: true
+    
+  - id: ts
+    fields: [title, description]
+    contents: 
+      - "ts.qmd"
+    type: table
+    sort: false # keep original order
+    filter-ui: false
+    sort-ui: false
+    categories: true
+    
+  - id: ml
+    fields: [title, description]
+    contents: 
+      - "df_manipulation.qmd"
+      #- "ts.qmd"
+    type: table
+    sort: false # keep original order
+    filter-ui: false
+    sort-ui: false
+    categories: true
+---
+
+## Data frame
+
+::: {#df}
+:::
+
+
+## Time series
+
+::: {#ts}
+:::
+
+## Machine learning
+
+::: {#ml}
+:::
+
+
+
+
+

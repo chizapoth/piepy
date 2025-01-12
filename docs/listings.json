@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/documentation/index.html",
+    "items": [
+      "/documentation/df_manipulation.html",
+      "/documentation/ts.html"
+    ]
+  },
+  {
+    "listing": "/case_study/index.html",
+    "items": [
+      "/case_study/rainfall.html"
+    ]
+  }
+]

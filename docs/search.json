@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Piepy",
+    "section": "",
+    "text": "Github\n  \n\n  \n  \nThis is the"
+  },
+  {
+    "objectID": "documentation/index.html",
+    "href": "documentation/index.html",
+    "title": "Documentation",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "documentation/index.html#data-frame",
+    "href": "documentation/index.html#data-frame",
+    "title": "Documentation",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "documentation/index.html#time-series",
+    "href": "documentation/index.html#time-series",
+    "title": "Documentation",
+    "section": "Time series",
+    "text": "Time series\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nTime series\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "documentation/index.html#machine-learning",
+    "href": "documentation/index.html#machine-learning",
+    "title": "Documentation",
+    "section": "Machine learning",
+    "text": "Machine learning\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "documentation/df_manipulation.html",
+    "href": "documentation/df_manipulation.html",
+    "title": "Dataframe manipulation",
+    "section": "",
+    "text": "1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/df_manipulation.html#quarto",
+    "href": "documentation/df_manipulation.html#quarto",
+    "title": "Data frame manipulation",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "documentation/df_manipulation.html#running-code",
+    "href": "documentation/df_manipulation.html#running-code",
+    "title": "Data frame manipulation",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/ts.html",
+    "href": "documentation/ts.html",
+    "title": "Time series",
+    "section": "",
+    "text": "You can add options to executable code like this\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(0, 20, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/ts.html#quarto",
+    "href": "documentation/ts.html#quarto",
+    "title": "Untitled",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "documentation/ts.html#running-code",
+    "href": "documentation/ts.html#running-code",
+    "title": "Untitled",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/ts.html#section",
+    "href": "documentation/ts.html#section",
+    "title": "Time series",
+    "section": "",
+    "text": "You can add options to executable code like this\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(0, 20, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/df_manipulation.html#pandas",
+    "href": "documentation/df_manipulation.html#pandas",
+    "title": "Dataframe manipulation",
+    "section": "",
+    "text": "1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "case_study/index.html",
+    "href": "case_study/index.html",
+    "title": "Case study",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nRain fall\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

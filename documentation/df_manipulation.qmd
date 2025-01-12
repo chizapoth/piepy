@@ -1,0 +1,21 @@
+---
+title: "Dataframe manipulation"
+format: html
+jupyter: python3
+---
+
+## pandas
+
+
+```{python}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{python}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

@@ -1,0 +1,20 @@
+---
+title: "Case study"
+listing:
+  - id: case
+    fields: [title, description]
+    contents: 
+      - "rainfall.qmd"
+      #- "ts.qmd"
+    type: table
+    sort: false # keep original order
+    filter-ui: false
+    sort-ui: false
+    categories: true
+---
+
+
+
+::: {#case}
+:::
+

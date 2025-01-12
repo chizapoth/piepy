@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "Piepy"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+      - href: documentation/index.qmd
+        text: Documentation
+
+      - href: case_study/index.qmd
+        text: Case study
+
+    right: 
+      - icon: github
+        href: https://github.com/andreaczhang/piepy
+        
+format:
+  html:
+    theme: flatly
+    # css: styles.css
+    toc: true
+
