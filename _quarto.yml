@@ -16,6 +16,9 @@ website:
 
       - href: case_study/index.qmd
         text: Case study
+        
+      - href: log.qmd
+        text: Log
 
     right: 
       - icon: github

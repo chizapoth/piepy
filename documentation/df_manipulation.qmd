@@ -4,18 +4,97 @@ format: html
 jupyter: python3
 ---
 
+## Strings
+
+```{python}
+string1 = 'Hello'
+string2 = 'World'
+res = string1 + string2
+print(res)
+```
+
+Formatted print
+
+```{python}
+num_rows = 3
+print(f'Number of rows: {num_rows}')
+```
+
 ## pandas
 
+Basic information about a dataframe
 
 ```{python}
-1 + 1
+import pandas as pd
+data = {
+    "A": [1, 2, 3],
+    "B": [4, 5, 6],
+    "C": [7, 8, 9],
+    "D": [10, 11, 12]
+}
+df = pd.DataFrame(data)
+rows, columns = df.shape
+print(f"numbers of rows: {rows}")
+print(f"numbers of columns: {columns}")
 ```
 
-You can add options to executable code like this 
+Column names, data types for each column
 
 ```{python}
-#| echo: false
-2 * 2
+df.columns.to_list()
+df.dtypes
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+Adding a new column
+
+```{python}
+df['New'] = [14, 15, 16]
+```
+
+### Subsetting
+
+#### Row selection
+
+By index. Need to pay special attention to the indices!
+
+```{python}
+df[0:1]
+df[0:2]
+```
+
+Index location based selection: `iloc` and label-based indexing: `loc`. The latter is more intuitive as it selects the rows as the indices suggest.
+
+```{python}
+df.iloc[0] # 1st
+df.loc[2:4] # 2nd and 4th
+```
+
+#### Column selection 
+
+If you know the column names, can use the names. 
+
+```{python}
+# names = df.columns.to_list()
+df['A']
+```
+
+For more than one, need to use either `iloc`, `loc` or list comprehension.
+
+```{python}
+df.iloc[1:2, [0, 2]]
+df.loc[1:2, ['A', 'C']] # with loc
+```
+
+List comprehension. Note that the colnames are not just strings, they are indices.
+
+```{python}
+colname = df.columns[[0, 2]]
+df[colname]
+```
+
+`head()` and `tail()` also work in python, just that it prints out the first/last 5. `head(6)` prints first 6.
+
+
+
+
+

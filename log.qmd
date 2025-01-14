@@ -1,0 +1,44 @@
+---
+title: "Log"
+description: "Process log"
+sidebar: false
+code-block-bg: false
+code-block-border-left: true
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    code-tools: false
+    highlight-style: gruvbox
+---
+
+:::{.callout-note}
+## Priority rank
+
+1. Time series: classical method and ML
+2. Time series: scaling up
+3. ML on Cloud
+4. Other ML methods such as classification 
+5. A/B testing
+:::
+
+
+### Time series 
+
+|Stage |Tasks |Progress | Python | R|
+|--|---|----|-|-|
+|Set up | Find a problem set |Done. FAO TS questions|||
+|  |Find a dataset to test | Done. Kaggle rainfall data, with 4 variables to model|||
+|  ||Advanced: Norsyss data, weekly with different locations and metrics |||
+|Analysis: rainfall |EDA and processing |Done | Yes|Yes |
+| |Model: classical | | | |
+| |Model: ML | | | |
+|Analysis: norsyss | | | | |
+
+
+
+
+
+
+

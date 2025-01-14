@@ -5,6 +5,7 @@ listing:
     fields: [title, description]
     contents: 
       - "df_manipulation.qmd"
+      - "viz.qmd"
     type: table
     sort: false # keep original order
     filter-ui: false

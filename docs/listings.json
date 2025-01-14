@@ -3,6 +3,7 @@
     "listing": "/documentation/index.html",
     "items": [
       "/documentation/df_manipulation.html",
+      "/documentation/viz.html",
       "/documentation/ts.html"
     ]
   },

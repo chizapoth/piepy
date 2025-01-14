@@ -11,14 +11,14 @@
     "href": "documentation/index.html",
     "title": "Documentation",
     "section": "",
-    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\nData Visualization with seaborn\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "documentation/index.html#data-frame",
     "href": "documentation/index.html#data-frame",
     "title": "Documentation",
     "section": "",
-    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nDataframe manipulation\n\n\n\n\n\n\n\nData Visualization with seaborn\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "documentation/index.html#time-series",
@@ -39,7 +39,7 @@
     "href": "documentation/df_manipulation.html",
     "title": "Dataframe manipulation",
     "section": "",
-    "text": "1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "string1 = 'Hello'\nstring2 = 'World'\nres = string1 + string2\nprint(res)\n\nHelloWorld\n\n\nFormatted print\n\nnum_rows = 3\nprint(f'Number of rows: {num_rows}')\n\nNumber of rows: 3"
   },
   {
     "objectID": "documentation/df_manipulation.html#quarto",
@@ -87,8 +87,8 @@
     "objectID": "documentation/df_manipulation.html#pandas",
     "href": "documentation/df_manipulation.html#pandas",
     "title": "Dataframe manipulation",
-    "section": "",
-    "text": "1 + 1\n\n2\n\n\nYou can add options to executable code like this\n\n\n4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "section": "pandas",
+    "text": "pandas\nBasic information about a dataframe\n\nimport pandas as pd\ndata = {\n    \"A\": [1, 2, 3],\n    \"B\": [4, 5, 6],\n    \"C\": [7, 8, 9],\n    \"D\": [10, 11, 12]\n}\ndf = pd.DataFrame(data)\nrows, columns = df.shape\nprint(f\"numbers of rows: {rows}\")\nprint(f\"numbers of columns: {columns}\")\n\nnumbers of rows: 3\nnumbers of columns: 4\n\n\nColumn names, data types for each column\n\ndf.columns.to_list()\ndf.dtypes\n\nA    int64\nB    int64\nC    int64\nD    int64\ndtype: object\n\n\nAdding a new column\n\ndf['New'] = [14, 15, 16]\n\n\nSubsetting\n\nRow selection\nBy index. Need to pay special attention to the indices!\n\ndf[0:1]\ndf[0:2]\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nNew\n\n\n\n\n0\n1\n4\n7\n10\n14\n\n\n1\n2\n5\n8\n11\n15\n\n\n\n\n\n\n\n\nIndex location based selection: iloc and label-based indexing: loc. The latter is more intuitive as it selects the rows as the indices suggest.\n\ndf.iloc[0] # 1st\ndf.loc[2:4] # 2nd and 4th\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nNew\n\n\n\n\n2\n3\n6\n9\n12\n16\n\n\n\n\n\n\n\n\n\n\nColumn selection\nIf you know the column names, can use the names.\n\n# names = df.columns.to_list()\ndf['A']\n\n0    1\n1    2\n2    3\nName: A, dtype: int64\n\n\nFor more than one, need to use either iloc, loc or list comprehension.\n\ndf.iloc[1:2, [0, 2]]\ndf.loc[1:2, ['A', 'C']] # with loc\n\n\n\n\n\n\n\n\n\nA\nC\n\n\n\n\n1\n2\n8\n\n\n2\n3\n9\n\n\n\n\n\n\n\n\nList comprehension. Note that the colnames are not just strings, they are indices.\n\ncolname = df.columns[[0, 2]]\ndf[colname]\n\n\n\n\n\n\n\n\n\nA\nC\n\n\n\n\n0\n1\n7\n\n\n1\n2\n8\n\n\n2\n3\n9\n\n\n\n\n\n\n\n\nhead() and tail() also work in python, just that it prints out the first/last 5. head(6) prints first 6."
   },
   {
     "objectID": "case_study/index.html",
@@ -96,5 +96,47 @@
     "title": "Case study",
     "section": "",
     "text": "Title\n\n\nDescription\n\n\n\n\n\n\nRain fall\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "documentation/df_manipulation.html#strings",
+    "href": "documentation/df_manipulation.html#strings",
+    "title": "Dataframe manipulation",
+    "section": "",
+    "text": "string1 = 'Hello'\nstring2 = 'World'\nres = string1 + string2\nprint(res)\n\nHelloWorld\n\n\nFormatted print\n\nnum_rows = 3\nprint(f'Number of rows: {num_rows}')\n\nNumber of rows: 3"
+  },
+  {
+    "objectID": "case_study/rainfall.html",
+    "href": "case_study/rainfall.html",
+    "title": "Rain fall",
+    "section": "",
+    "text": "You can add options to executable code like this\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(0, 20, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "case_study/rainfall.html#section",
+    "href": "case_study/rainfall.html#section",
+    "title": "Rain fall",
+    "section": "",
+    "text": "You can add options to executable code like this\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(0, 20, 100)\nplt.plot(x, np.sin(x))\nplt.show()\n\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "documentation/viz.html",
+    "href": "documentation/viz.html",
+    "title": "Data Visualization with seaborn",
+    "section": "",
+    "text": "import pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Example DataFrame with a time series\ndata = {\n    \"Date\": pd.date_range(start=\"2023-01-01\", periods=10, freq=\"D\"),\n    \"A\": [10, 12, 15, 14, 13, 18, 20, 22, 19, 21],\n}\ndf = pd.DataFrame(data)\n\n# Plot the time series\nsns.lineplot(x=\"Date\", y=\"A\", data=df)\nplt.title(\"Time Series of Feature A\")\nplt.xlabel(\"Date\")\nplt.ylabel(\"Value of A\")\nplt.xticks(rotation=45)  # Rotate x-axis labels for better readability\nplt.show()\n\n\n\n\n\n\n\n\nYou might need to clear the previous plot. Use plt.clf()."
+  },
+  {
+    "objectID": "log.html",
+    "href": "log.html",
+    "title": "Log",
+    "section": "",
+    "text": "Priority rank\n\n\n\n\nTime series: classical method and ML\nTime series: scaling up\nML on Cloud\nOther ML methods such as classification\nA/B testing\n\n\n\n\nTime series\n\n\n\n\n\n\n\n\n\n\nStage\nTasks\nProgress\nPython\nR\n\n\n\n\nSet up\nFind a problem set\nDone. FAO TS questions\n\n\n\n\n\nFind a dataset to test\nDone. Kaggle rainfall data, with 4 variables to model\n\n\n\n\n\n\nAdvanced: Norsyss data, weekly with different locations and metrics\n\n\n\n\nAnalysis: rainfall\nEDA and processing\nDone\nYes\nYes\n\n\n\nModel: classical\n\n\n\n\n\n\nModel: ML\n\n\n\n\n\nAnalysis: norsyss"
+  },
+  {
+    "objectID": "log.html#progress-log",
+    "href": "log.html#progress-log",
+    "title": "Log",
+    "section": "Progress log",
+    "text": "Progress log\n\n\n\n\n\n\n\n\nStage\nTasks\nProgress\n\n\n\n\nPlanning\nAcquire access to MIMIC IV data\nDone\n\n\n\nLearn how to use BigQuery\nDone\n\n\n\nLearn BigQuery API to Rstudio locally, set up authentication\nDone\n\n\n\nProduce the documentation for project proposal\nDone\n\n\nData extraction\nRead the documentation for MIMIC IV, understand which ones are relevant\nDone\n\n\n\nExtract data for selected demo cohort (N=100)\nDone\n\n\n\nDocument the BQ process"
   }
 ]

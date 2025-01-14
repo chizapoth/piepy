@@ -1,0 +1,31 @@
+---
+title: "Data Visualization with `seaborn`"
+format: html
+jupyter: python3
+---
+
+
+
+```{python}
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Example DataFrame with a time series
+data = {
+    "Date": pd.date_range(start="2023-01-01", periods=10, freq="D"),
+    "A": [10, 12, 15, 14, 13, 18, 20, 22, 19, 21],
+}
+df = pd.DataFrame(data)
+
+# Plot the time series
+sns.lineplot(x="Date", y="A", data=df)
+plt.title("Time Series of Feature A")
+plt.xlabel("Date")
+plt.ylabel("Value of A")
+plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
+plt.show()
+```
+
+
+You might need to clear the previous plot. Use `plt.clf()`.
