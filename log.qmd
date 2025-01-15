@@ -32,8 +32,8 @@ format:
 |  |Find a dataset to test | Done. Kaggle rainfall data, with 4 variables to model|||
 |  ||Advanced: Norsyss data, weekly with different locations and metrics |||
 |Analysis: rainfall |EDA and processing |Done | Yes|Yes |
-| |Model: classical | | | |
-| |Model: ML | | | |
+| |Model: classical |ARIMA <br/> SARIMA <br/> Exponential smoothing | | |
+| |Model: ML | LSTM <br/> xgboost | | *keras in R is creating issues, ignore*|
 |Analysis: norsyss | | | | |
 
 

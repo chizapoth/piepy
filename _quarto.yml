@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd" # this must be here!
+    - "!code_py/"
+    - "!code_r/"
 
 website:
   page-navigation: true

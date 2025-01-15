@@ -130,7 +130,7 @@
     "href": "log.html",
     "title": "Log",
     "section": "",
-    "text": "Priority rank\n\n\n\n\nTime series: classical method and ML\nTime series: scaling up\nML on Cloud\nOther ML methods such as classification\nA/B testing\n\n\n\n\nTime series\n\n\n\n\n\n\n\n\n\n\nStage\nTasks\nProgress\nPython\nR\n\n\n\n\nSet up\nFind a problem set\nDone. FAO TS questions\n\n\n\n\n\nFind a dataset to test\nDone. Kaggle rainfall data, with 4 variables to model\n\n\n\n\n\n\nAdvanced: Norsyss data, weekly with different locations and metrics\n\n\n\n\nAnalysis: rainfall\nEDA and processing\nDone\nYes\nYes\n\n\n\nModel: classical\n\n\n\n\n\n\nModel: ML\n\n\n\n\n\nAnalysis: norsyss"
+    "text": "Priority rank\n\n\n\n\nTime series: classical method and ML\nTime series: scaling up\nML on Cloud\nOther ML methods such as classification\nA/B testing\n\n\n\n\nTime series\n\n\n\n\n\n\n\n\n\n\nStage\nTasks\nProgress\nPython\nR\n\n\n\n\nSet up\nFind a problem set\nDone. FAO TS questions\n\n\n\n\n\nFind a dataset to test\nDone. Kaggle rainfall data, with 4 variables to model\n\n\n\n\n\n\nAdvanced: Norsyss data, weekly with different locations and metrics\n\n\n\n\nAnalysis: rainfall\nEDA and processing\nDone\nYes\nYes\n\n\n\nModel: classical\nARIMA  SARIMA  Exponential smoothing\n\n\n\n\n\nModel: ML\nLSTM  xgboost\n\nkeras in R is creating issues, ignore\n\n\nAnalysis: norsyss"
   },
   {
     "objectID": "log.html#progress-log",
