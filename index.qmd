@@ -8,11 +8,11 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/andreaczhang/piepy
+      href: https://github.com/chizapoth/piepy
 ---
 
 ::: {#hero-heading}
 
-This is the 
+This is a repository for some python code. The project is suspended as of 2025.03.
 
 :::

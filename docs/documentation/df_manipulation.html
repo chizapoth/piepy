@@ -136,6 +136,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../case_study/index.html"> 
 <span class="menu-text">Case study</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../log.html"> 
+<span class="menu-text">Log</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -191,7 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="strings" class="level2">
 <h2 class="anchored" data-anchor-id="strings">Strings</h2>
-<div id="371fdb2b" class="cell" data-execution_count="1">
+<div id="e5b5f8f7" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>string1 <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>string2 <span class="op">=</span> <span class="st">'World'</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> string1 <span class="op">+</span> string2</span>
@@ -201,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Formatted print</p>
-<div id="83949931" class="cell" data-execution_count="2">
+<div id="01900e2a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>num_rows <span class="op">=</span> <span class="dv">3</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Number of rows: </span><span class="sc">{</span>num_rows<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -212,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pandas" class="level2">
 <h2 class="anchored" data-anchor-id="pandas">pandas</h2>
 <p>Basic information about a dataframe</p>
-<div id="e61afda5" class="cell" data-execution_count="3">
+<div id="5024e59f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"A"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>],</span>
@@ -230,7 +234,7 @@ numbers of columns: 4</code></pre>
 </div>
 </div>
 <p>Column names, data types for each column</p>
-<div id="495085f3" class="cell" data-execution_count="4">
+<div id="ad36b3c1" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.columns.to_list()</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -242,7 +246,7 @@ dtype: object</code></pre>
 </div>
 </div>
 <p>Adding a new column</p>
-<div id="ef595efb" class="cell" data-execution_count="5">
+<div id="28c1f6e4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'New'</span>] <span class="op">=</span> [<span class="dv">14</span>, <span class="dv">15</span>, <span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="subsetting" class="level3">
@@ -250,7 +254,7 @@ dtype: object</code></pre>
 <section id="row-selection" class="level4">
 <h4 class="anchored" data-anchor-id="row-selection">Row selection</h4>
 <p>By index. Need to pay special attention to the indices!</p>
-<div id="7da33b0c" class="cell" data-execution_count="6">
+<div id="6a509917" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">0</span>:<span class="dv">1</span>]</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">0</span>:<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -294,7 +298,7 @@ dtype: object</code></pre>
 </div>
 </div>
 <p>Index location based selection: <code>iloc</code> and label-based indexing: <code>loc</code>. The latter is more intuitive as it selects the rows as the indices suggest.</p>
-<div id="7ace5291" class="cell" data-execution_count="7">
+<div id="14ae103c" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">0</span>] <span class="co"># 1st</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df.loc[<span class="dv">2</span>:<span class="dv">4</span>] <span class="co"># 2nd and 4th</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
@@ -333,7 +337,7 @@ dtype: object</code></pre>
 <section id="column-selection" class="level4">
 <h4 class="anchored" data-anchor-id="column-selection">Column selection</h4>
 <p>If you know the column names, can use the names.</p>
-<div id="49cd2128" class="cell" data-execution_count="8">
+<div id="666eae72" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># names = df.columns.to_list()</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'A'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -344,7 +348,7 @@ Name: A, dtype: int64</code></pre>
 </div>
 </div>
 <p>For more than one, need to use either <code>iloc</code>, <code>loc</code> or list comprehension.</p>
-<div id="1b048d8e" class="cell" data-execution_count="9">
+<div id="16d9b66b" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">1</span>:<span class="dv">2</span>, [<span class="dv">0</span>, <span class="dv">2</span>]]</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df.loc[<span class="dv">1</span>:<span class="dv">2</span>, [<span class="st">'A'</span>, <span class="st">'C'</span>]] <span class="co"># with loc</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -379,7 +383,7 @@ Name: A, dtype: int64</code></pre>
 </div>
 </div>
 <p>List comprehension. Note that the colnames are not just strings, they are indices.</p>
-<div id="a6f5d7a4" class="cell" data-execution_count="10">
+<div id="39d78ee9" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>colname <span class="op">=</span> df.columns[[<span class="dv">0</span>, <span class="dv">2</span>]]</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df[colname]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
